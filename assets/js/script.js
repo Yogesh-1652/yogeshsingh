@@ -190,7 +190,7 @@ var modal = document.getElementById("myModal");
  // Function to show the modal after 10 seconds
 setTimeout(function () {
   document.getElementById("profile_modal").style.display = "block";
-}, 10000);
+}, 5000);
 
 document.getElementById("avatar-img").addEventListener("click", function () {
   document.getElementById("profile_modal").style.display = "block";
