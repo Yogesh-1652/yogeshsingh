@@ -157,3 +157,52 @@ for (let i = 0; i < navigationLinks.length; i++) {
 
   });
 }
+
+var modal = document.getElementById("myModal");
+
+  // Get the image and insert it inside the modal - use its "alt" text as a caption
+  var blogPostItems = document.querySelectorAll('.blog-post-item');
+  var modalImgs = document.getElementById("img01");
+  var captionText = document.getElementById("caption");
+
+  blogPostItems.forEach(function(item) {
+    item.addEventListener('click', function() {
+      var img = item.querySelector('img');
+      modal.style.display = "block";
+      modalImgs.src = img.src;
+      captionText.innerHTML = img.alt;
+    });
+  });
+
+  // Get the <span> element that closes the modal
+  var span = document.getElementsByClassName("close")[0];
+
+  // When the user clicks on <span> (x), close the modal
+  span.onclick = function() { 
+    modal.style.display = "none";
+  }
+
+  document.getElementById('avatar-img').addEventListener('click', function() {
+    document.getElementById('login-container').style.display = 'block';
+  });
+
+
+ // Function to show the modal after 10 seconds
+setTimeout(function () {
+  document.getElementById("profile_modal").style.display = "block";
+}, 10000);
+
+document.getElementById("avatar-img").addEventListener("click", function () {
+  document.getElementById("profile_modal").style.display = "block";
+});
+
+document.querySelector(".profile_close").addEventListener("click", function () {
+  document.getElementById("profile_modal").style.display = "none";
+});
+
+// Close modal when clicking outside the modal content
+window.onclick = function (event) {
+  if (event.target === document.getElementById("profile_modal")) {
+    document.getElementById("profile_modal").style.display = "none";
+  }
+};
