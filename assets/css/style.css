@@ -1437,7 +1437,7 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   /* .avatar-box { border-radius: 30px; } */
 
-  .avatar-box img { width: 120px; }
+  .avatar-box img { width: 120px; cursor: pointer; }
 
   .info-content .name { margin-bottom: 15px; }
 
@@ -2013,11 +2013,11 @@ textarea.form-input::-webkit-resizer { display: none; }
   top: -40px;
   right: 0px;
   font-size: 30px;
-  color: #f50505;
+  color: #ffffff;
   cursor: pointer;
 }
 .profile_close:hover {
-  color: #ffffff;
+  color: #ff0000;
 }
 
 @import url("https://fonts.googleapis.com/css?family=Roboto|Sriracha&display=swap");
