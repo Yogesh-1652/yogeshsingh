@@ -341,9 +341,10 @@ main {
   width: 100%;
   height: auto;
   border-radius: 50%;
+  transition: transform 0.3s ease;
 }
 
-.avatar-box:hover {
+.avatar-box img:hover {
   transform: scale(1.05);
 }
 /* avatar modal */
